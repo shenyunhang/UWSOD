@@ -109,7 +109,7 @@ class ResizeTransform(Transform):
             ret = np.asarray(pil_image)
         else:
             # PIL only supports uint8
-            img = torch.from_numpy(img)
+            img = torch.from_numpy(img.copy())
             shape = list(img.shape)
             shape_4d = shape[:2] + [1] * (4 - len(shape)) + shape[2:]
             img = img.view(shape_4d).permute(2, 3, 0, 1)  # hw(c) -> nchw

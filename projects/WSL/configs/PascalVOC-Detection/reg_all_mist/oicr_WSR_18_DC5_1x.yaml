@@ -1,0 +1,10 @@
+_BASE_: "../oicr_WSR_18_DC5_1x.yaml"
+WSL:
+  REFINE_NUM: 4
+  REFINE_REG: [True, True, True, True]
+  REFINE_MIST: True
+TEST:
+  EVAL_PERIOD: 10000
+MODEL:
+  ROI_BOX_HEAD:
+    SMOOTH_L1_BETA: 1

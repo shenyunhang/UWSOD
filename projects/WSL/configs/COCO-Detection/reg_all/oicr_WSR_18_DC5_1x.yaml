@@ -1,0 +1,8 @@
+_BASE_: "../oicr_WSR_18_DC5_1x.yaml"
+MODEL:
+  ROI_HEADS:
+    BATCH_SIZE_PER_IMAGE: 512
+    POSITIVE_FRACTION: 0.25
+WSL:
+  REFINE_NUM: 4
+  REFINE_REG: [True, True, True, True]
