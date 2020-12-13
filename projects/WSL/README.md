@@ -19,7 +19,7 @@ If you find UWSOD useful in your research, please consider citing:
 @inproceedings{UWSOD_2020_NeurIPS,
 	author = {Shen, Yunhang and Ji, Rongrong and Chen, Zhiwei and Wu, Yongjian and Huang, Feiyue},
 	title = {UWSOD: Toward Fully-Supervised-Level Capacity Weakly Supervised Object Detection},
-	booktitle = {Advances in Neural Information Processing Systems(NeurIPS)},
+	booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
 	year = {2020},
 }   
 ```
