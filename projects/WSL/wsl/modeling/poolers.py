@@ -223,7 +223,6 @@ class ROIPooler(nn.Module):
         x: List[torch.Tensor],
         box_lists: List[Boxes],
         level_ids=None,
-        oh_labels_list=None,
     ):
         """
         Args:
