@@ -19,7 +19,7 @@ If you find UWSOD useful in your research, please consider citing:
 @inproceedings{UWSOD_2020_NeurIPS,
 	author = {Shen, Yunhang and Ji, Rongrong and Chen, Zhiwei and Wu, Yongjian and Huang, Feiyue},
 	title = {UWSOD: Toward Fully-Supervised-Level Capacity Weakly Supervised Object Detection},
-	booktitle = {Advances in Neural Information Processing Systems(NeurIPS)},
+	booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
 	year = {2020},
 }   
 ```
@@ -73,6 +73,13 @@ UWSOD
 #### ResNet18-WS
 ```
 python3 projects/WSL/tools/train_net.py --num-gpus 4 --config-file projects/WSL/configs/PascalVOC-Detection/uwsod_WSR_18_DC5_1x.yaml OUTPUT_DIR output/uwsod_WSR_18_DC5_VOC07_`date +'%Y-%m-%d_%H-%M-%S'`
+```
+
+We also provide our training log and final model [here](https://1drv.ms/u/s!Am1oWgo9554dhuBqu66fRrzkl8wBzg?e=dlKN4W).
+
+To run inference with test-time augmentation on this final model:
+```
+python3 projects/WSL/tools/train_net.py --resume --eval-only --num-gpus 4 --config-file projects/WSL/configs/PascalVOC-Detection/uwsod_WSR_18_DC5_1x.yaml OUTPUT_DIR output/uwsod_WSR_18_DC5_VOC07_2020-12-02_12-59-45
 ```
 
 #### VGG16
