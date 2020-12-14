@@ -74,7 +74,13 @@ UWSOD
 ```
 python3 projects/WSL/tools/train_net.py --num-gpus 4 --config-file projects/WSL/configs/PascalVOC-Detection/uwsod_WSR_18_DC5_1x.yaml OUTPUT_DIR output/uwsod_WSR_18_DC5_VOC07_`date +'%Y-%m-%d_%H-%M-%S'`
 ```
-Our training log and final model are [here](https://1drv.ms/u/s!Am1oWgo9554dhuBqu66fRrzkl8wBzg?e=dlKN4W).
+
+We also provide our training log and final model [here](https://1drv.ms/u/s!Am1oWgo9554dhuBqu66fRrzkl8wBzg?e=dlKN4W).
+
+To run inference with test-time augmentation on this final model:
+```
+python3 projects/WSL/tools/train_net.py --resume --eval-only --num-gpus 4 --config-file projects/WSL/configs/PascalVOC-Detection/uwsod_WSR_18_DC5_1x.yaml OUTPUT_DIR output/uwsod_WSR_18_DC5_VOC07_2020-12-02_12-59-45
+```
 
 #### VGG16
 ```
