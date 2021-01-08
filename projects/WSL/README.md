@@ -59,9 +59,9 @@ Then we have the following directory structure:
 UWSOD
 |_ models
 |  |_ DRN-WSOD
-|     |_ resnet18_ws_model_120.pkl
-|     |_ resnet150_ws_model_120.pkl
-|     |_ resnet101_ws_model_120.pkl
+|     |_ resnet18_ws_model_120_d2.pkl
+|     |_ resnet150_ws_model_120_d2.pkl
+|     |_ resnet101_ws_model_120_d2.pkl
 |_ ...
 ```
 
