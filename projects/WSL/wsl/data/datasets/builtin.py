@@ -36,8 +36,8 @@ CLASS_NAMES = [
 
 _PREDEFINED_SPLITS_WEB = {}
 _PREDEFINED_SPLITS_WEB["flickr"] = {
-    "flickr_voc": ("flickr_voc/images", "flickr_voc/images.json"),
-    "flickr_coco": ("flickr_coco/images", "flickr_coco/images.json"),
+    "flickr_voc": ("flickr_voc/images", "flickr_voc/images_d2.json"),
+    "flickr_coco": ("flickr_coco/images", "flickr_coco/images_d2.json"),
 }
 
 

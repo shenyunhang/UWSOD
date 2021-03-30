@@ -90,6 +90,7 @@ class Trainer(DefaultTrainer):
         """
         loss_dict = self.model(data)
         losses = sum(loss for loss in loss_dict.values())
+        losses_cpu = losses.cpu().detach().numpy()
         self._detect_anomaly(losses, loss_dict)
 
         metrics_dict = loss_dict
